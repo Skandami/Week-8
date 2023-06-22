@@ -1,35 +1,40 @@
 .main-page
 {
-    width:100%;
+    width:120%;
     margin:0;
 }
 
-    .head {
+    .header {
       display: flex;
-     align-items: flex-start;
-      height: 10%;
-      margin: auto;
+      height: 40%;
+      width: 100%;
     }
 
-.head__logo
+.header__logo
 {display: flex;
  position: relative;
+ margin-left: 10%;
 width: 201px;
 height: 40px;
-left: 76px;
-top: 20px;}
+top: 5vh;}
 
 
-.head__button
-
+.header__button
 {
-  display: flex;
+display: flex;
 position: relative;
-width: 130px;
+width: 115px;
 height: 38px;
-left: 1000px;
-top: 20px;
-right: 10px
+margin-left: 60%;
+top: 5vh;
+background:url(/assets/images/button-cart.svg);
+cursor: pointer;
+border: none;
+
+}
+
+.article {
+  width: 100%;
 }
 .article__one{
   display: flex;
@@ -73,91 +78,50 @@ width: 270px;
 height: 84px;
 left: 116px;
 top: 558px;
-
-background: #5222D0;
+background: url(/assets/images/button-buy.png);
 border-radius: 100px;
+cursor: pointer;
 }
 
 .article__img {
   display: flex;
 position: absolute;
-width: 1096.34px;
+width: 70px;
 height: 724.31px;
 left: 657px;
 top: 128.11px;
-height: 724.3131103515625px;
-width: 1096.33984375px;
 left: 657px;
 top: 128.106201171875px;
 border-radius: 0px;
 
 }
-.menu__1_active {
-  display: flex;
-font-size: 20px;
-font-weight: 300;
-line-height: 32px;
-letter-spacing: 0em;
-text-align: left;
 
 
+
+.menu__item {
 font-family: Gentium Book Plus;
 font-style: normal;
-font-weight: 300;
+font-size: large;
 font-size: 20px;
-line-height: 160%;
-
 color: #5222D0;
 }
-.menu__2 {
+
+.menu__item_active {
   font-family: Gentium Book Plus;
 font-style: normal;
-font-weight: 300;
+font-size: large;
 font-size: 20px;
-line-height: 160%;
-display: flex;
-
 color: #5222D0;
 }
-.menu__3{
 
 
-font-family: Gentium Book Plus;
-font-style: normal;
-font-weight: 300;
-font-size: 20px;
-line-height: 160%;
-color: #5222D0;
-
-
-}
-.menu__4 {
-
-
-font-family: Gentium Book Plus;
-font-style: normal;
-font-weight: 300;
-font-size: 20px;
-line-height: 160%;
-color: #5222D0;
-
-}
-.container__content{
-  
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-       width: 100vh;
-    height: 70vh;
-    margin-left: 8vw;   
-}
 
     
 .container__content {
     display: grid;
-    grid-gap: 50px;
-    grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
-    width: 120%;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(25%, 1fr));
+    width: 100%;
     height: 100%;
 
 }
@@ -166,21 +130,25 @@ color: #5222D0;
     margin-top: 20vh;
     flex-direction: column;
     justify-content: center;
-    width: 120%;
+    width: 100%;
     height: 70vh;
     margin-left: 8vw;   
 }
 
   .container__title {
     height: 30vh;
-
+     font-weight:500;
+     font-size:xx-large;  
+font-family: Gentium Book Plus;
   }
   
 .menu {
   display: inline-flex;
- gap: 10px;
-
+ justify-content: center;
+  font-weight: 300;
+ gap: 30px;
   list-style-type:  none;
+  width:100vw;
 }
 
 .footer {
@@ -188,20 +156,32 @@ color: #5222D0;
   position: absolute;
   align-items: flex-start;
   margin-bottom: 20px;
- top: 900px;
+ top: 1000px;
 
 }
 
 .container__input {
-  display: flexbox;
-
-    border-radius: 20px;
-background-image: url(/assets/images/Rectangle\ 12.png);
- text-align: center;
+  display: grid;
+  grid-auto-rows: 30% 30% 30% 10%;
+  justify-content:space-around; 
+  text-align: center;
+  row-gap: 4%;
+background-image: url(/assets/images/Rectangle\ 11.png);
+ color: azure;  
+font-family: Gentium Book Plus;
 }
+
+
 .container__news {
-  color: azure;
-  font-weight: 200;
+ font-size: medium;
 
 }
-  
+  .container__button {
+    
+     font-family: Gentium Book Plus;
+     color: beige;
+     background-color: #5222D0;
+     border-radius: 10%;
+    cursor: pointer;
+    font-size: medium;
+  }
